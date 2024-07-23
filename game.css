@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.image-wrapper {
+    background-color: rgb(106, 0, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: fit-content;
+    width: 1250px;
+    flex-wrap: wrap;
+}
+body {
+    background-image: url("./images/947851.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+img {
+    width: 150px;
+    height:140px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+    border-radius: 5px;
+}
+img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.signs {
+    margin-top: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: transparent;
+    width: 1250px;
+}
+.shake {
+  animation: shake 0.5s;
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+.image-wrapper img.incorrect {
+  border: 2px solid red;
+}
+.wrapper {
+text-align: center;
+  margin-top: 20px;
+}
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+.image-wrapper img {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+.tries__number, .ball, .question, .tries__left, .timer {
+  font-size: 20px;
+  margin: 10px;
+}
+.game-over {
+  font-size: 30px;
+  color: red;
+  margin-top: 20px;
+}
+.shake {
+  animation: shake 0.5s;
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+.incorrect {
+  border: 2px solid red;
+}
+.btn__start {
+    padding: 15px 50px;
+    background-color: black;
+    border: 1px solid white;
+    box-shadow: 0px 0px white;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    margin: 0 auto;
+    cursor: pointer;
+}
